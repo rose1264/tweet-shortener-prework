@@ -41,7 +41,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweets)
-  if tweet.length > 140
+  if tweets.each {|tweet| tweet.length > 140}
     bulk_tweet_shortener(tweets)
   else
     tweet
