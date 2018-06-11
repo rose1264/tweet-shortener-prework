@@ -5,7 +5,9 @@ def word_substituter(string)
     case word
     when "hello"
       word = "hi"
-    when ("to" || "two" || "too")
+    when "to" || "two"
+      word = "2"
+    when "too"
       word = "2"
     when "for" || "four"
       word = "4"
