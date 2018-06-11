@@ -40,9 +40,9 @@ def bulk_tweet_shortener(tweets)
   end
 end
 
-def selective_tweet_shortener(tweet)
+def selective_tweet_shortener(tweets)
   if tweet.length > 140
-    bulk_tweet_shortener(tweet)
+    bulk_tweet_shortener(tweets)
   else
     tweet
   end
