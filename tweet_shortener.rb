@@ -9,7 +9,7 @@ def word_substituter(string)
       word = "2"
     when "too"
       word = "2"
-    when "for" || "Four"
+    when "for" || "For" || "four" || "Four"
       word = "4"
     when "be"
       word = "b"
